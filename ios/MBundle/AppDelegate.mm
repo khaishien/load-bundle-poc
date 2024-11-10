@@ -28,4 +28,11 @@
 #endif
 }
 
+
+- (BOOL)newArchEnabled
+{
+  return NO;
+}
+
+
 @end
