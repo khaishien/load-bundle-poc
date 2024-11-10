@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Button, SafeAreaView, Text, View} from 'react-native';
 import {lazyImport} from './modules/utils';
 import {MyMath} from './types/MyMath';
@@ -10,10 +10,6 @@ function App(): React.JSX.Element {
       setMathMod(() => module);
     });
   }, []);
-
-  useEffect(() => {
-    console.log('##math', math);
-  }, [math]);
 
   const multiply = () => {
     console.log('math', math);
