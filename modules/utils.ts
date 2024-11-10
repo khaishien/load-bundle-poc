@@ -14,7 +14,6 @@ export async function lazyImport(modulePath: string) {
 
   NativeModules.ChunkModule.loadChunk(String(moduleId));
 
-  nextTick(10);
   console.log('##done');
 
   const res = global.__r(moduleId);
